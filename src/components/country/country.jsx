@@ -66,7 +66,7 @@ export const Country = () => {
                          <Box width="30px" >
                            <RecoveredLogo className={classes.logo}/>
                          </Box>
-                         <Box ml={2} mb={3}  textTransform="uppercase">
+                         <Box ml={2} mb={3}>
                            <Typography variant="h5" style={{fontWeight:"500" , textTransform:"uppercase"  }}> Recovered </Typography>
                            <Typography> { loading ? "last update" : new Date(lastUpdate).toDateString()}</Typography>
                            <Typography variant="h6" >{ loading ? "Select a country" : <span style={{fontWeight:"500" , fontSize:"30px"}}><CountUp start={0} end={recovered} separator="," duration={2} /></span>}</Typography>
@@ -83,7 +83,7 @@ export const Country = () => {
                          </Box>
                       </Box>
                     </Box>
-                    <Box >       
+                    <Box>       
                         <CountryChart/>
                     </Box> 
                </Box>    

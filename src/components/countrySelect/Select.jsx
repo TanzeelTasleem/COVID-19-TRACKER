@@ -20,10 +20,10 @@ export const Select = () => {
     useEffect(() => {
         const countries = async()=>{
         const name = await fetchCountries();
-        console.log(name)
         updateCountryName(name.data)
     }
      countries()
+     // eslint-disable-next-line
     }, [])
 
     const onSelect=async({target:{value}})=>{

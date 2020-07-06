@@ -60,7 +60,9 @@ export const Section = () => {
         updateData(response)
      }
       fetchData()
+    // eslint-disable-next-line
     },[]);
+    
 
   //  if(loading){
   //  return(<h1>loading ...</h1>)
