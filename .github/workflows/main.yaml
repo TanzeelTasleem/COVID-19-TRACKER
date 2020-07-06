@@ -28,7 +28,7 @@ jobs:
       with:
        node-version: '12'
       
-    - name : installing yarn   
+    - name : Installing yarn   
       uses: borales/actions-yarn@v2.0.0
       with:
         cmd: install # will run `yarn install` command
@@ -38,7 +38,7 @@ jobs:
       
     # Runs a set of commands using the runners shell
     - name: Installing surge
-      run: npm install -global surge  
+      run: npm install --global surge  
       
     - name: deployment on surge domain
       run: surge ./ virus-19.surge.sh --token${{secrets.SURGE_TOKEN}} 
