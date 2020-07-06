@@ -1,7 +1,7 @@
-/* .containar{
-  background-image: url('./mask.jpg');
-  height: 1000px;
-} */
+.container{
+  margin: 0;
+  padding: 0;
+}
 
 
 

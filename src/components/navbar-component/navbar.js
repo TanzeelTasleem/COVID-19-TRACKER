@@ -4,7 +4,7 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Image from '../../images/covid.png'
 import Button from '@material-ui/core/Button';
-
+import {SimpleModal} from '../modal/modal'
 const useStyles = makeStyles({
     logo:{
      justifyContent:"space-between",
@@ -35,8 +35,8 @@ const classes=useStyles()
          <Toolbar className={classes.logo}>
            <div>
              <Button><img className={classes.img} src={Image} alt="Icon"/></Button>
-            </div>
-            <Button variant="contained" className={classes.main} disableElevation> Do & Dont's</Button>
+           </div>
+             <SimpleModal/>
         </Toolbar> 
        </AppBar>
       
