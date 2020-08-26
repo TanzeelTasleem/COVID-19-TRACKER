@@ -41,5 +41,5 @@ jobs:
       run: npm install -global surge  
       
     - name: deployment on surge domain
-      run: surge ./ virus-19.surge.sh --token${{secrets.SURGE_TOKEN}} 
+      run: surge ./build https://virus-19.surge.sh/ --token${{secrets.SURGE_TOKEN}} 
     
